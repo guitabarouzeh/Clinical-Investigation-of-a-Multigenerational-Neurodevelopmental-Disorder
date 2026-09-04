@@ -1,10 +1,12 @@
-Clinical Variant Prioritization in a Multigenerational Family With Neurodevelopmental Disorder
+# Clinical Investigation of a Multigenerational Neurodevelopmental Disorder
 Targeted Sequencing Panel Analysis and Candidate Gene Prioritization
  
  
-Overview
+## Overview
 This repository presents a case-based variant prioritization analysis performed using a Variant Call Format (VCF) file obtained from a targeted sequencing panel.
+
 The investigated family includes multiple individuals affected by a neurodevelopmental phenotype characterized by severe intellectual disability and developmental delay. The available genomic data belonged to one affected individual selected as the proband.
+
 The objective of this project was to systematically prioritize candidate variants and genes by integrating:
 * Variant annotation and classification
 * Zygosity
@@ -13,16 +15,20 @@ The objective of this project was to systematically prioritize candidate variant
 * Available clinical phenotype
 * Family history and pedigree
 * Evidence from OMIM, ClinVar, PubMed, and scientific literature
+
 This analysis represents an exploratory variant prioritization workflow. Due to limited clinical information and the absence of segregation analysis, the findings should not be interpreted as a definitive molecular diagnosis.
  
  
-1. Clinical Features
+## 1. Clinical Features
 The available clinical information indicated that multiple individuals in the family were affected by a severe neurodevelopmental phenotype.
+
 Reported features included:
 * Severe intellectual disability
 * Developmental delay
 * Significant impairment in educational functioning
+
 Detailed clinical information was not available for most affected individuals.
+
 The following information was unavailable or insufficiently documented:
 * Neurological examination
 * Brain imaging
@@ -34,52 +40,68 @@ The following information was unavailable or insufficiently documented:
 * Muscle involvement
 * Dysmorphic features
 * Newborn screening history
+
 One affected individual was selected as the proband, and a VCF file generated from a targeted sequencing panel was available for analysis.
  
  
-2. Family History and Pedigree
+## 2. Family History and Pedigree
 The parents of the affected siblings were reported to be clinically unaffected and non-consanguineous.
+
 The couple had:
 * Two affected sons
 * Two affected daughters
 * Two unaffected daughters
 * One unaffected son
+
 The proband was one of the affected daughters.
-Maternal Family History
+
+### Maternal Family History
 The mother was reported to have:
 * One affected brother
 * Two unaffected brothers
 * Two unaffected sisters
+
 The maternal grandparents were reported to have a consanguineous marriage.
-Paternal Family History
+
+### Paternal Family History
 The father was reported to have:
 * Two affected sisters
 * Two unaffected brothers
+
 One affected paternal aunt had:
 * One affected daughter
 * One unaffected daughter
 * Two unaffected sons
+
 Another affected paternal aunt had:
 * One affected son
 * Multiple unaffected sons and daughters
+
 The pedigree suggests the presence of affected individuals across multiple generations.
+
 However, interpretation of the inheritance pattern is limited because:
 * Segregation analysis has not been performed.
 * Genomic data from other affected family members are unavailable.
 * Detailed clinical phenotyping is unavailable.
 * The molecular status of unaffected relatives is unknown.
+
 The observed pedigree does not immediately fit a simple classical autosomal dominant or autosomal recessive model and may suggest variable expressivity, incomplete penetrance, or a more complex inheritance mechanism.
-Privacy Note: All potentially identifiable information has been excluded from this repository.
+
+### Privacy and Data Protection
+All potentially identifiable information has been excluded from this repository.
  
  
-3. Available Genomic Data
+## 3. Available Genomic Data
 A VCF file generated from a targeted sequencing panel was available for one affected individual.
+
 The analysis focused on variants annotated in the available VCF file.
+
 No molecular data were available for:
 * Parents
 * Affected siblings
 * Unaffected siblings
 * Other affected relatives
+
 Therefore, the following analyses could not be performed:
 * Segregation analysis
 * Determination of parental origin
@@ -89,45 +111,52 @@ Therefore, the following analyses could not be performed:
 * Identification of cis/trans relationships
  
  
-4. Methodology
-4.1 Initial Variant Filtering
+## 4. Methodology
+### 4.1 Initial Variant Filtering
 A stepwise variant prioritization strategy was applied to the available VCF data.
-Step 1 — Removal of Benign and Likely Benign Variants
+
+#### Step 1 — Removal of Benign and Likely Benign Variants
 Variants annotated as:
 * Benign
 * Likely benign
+
 in the available ACMG and/or ClinVar annotation fields were deprioritized during the initial filtering process.
+
 Variants without clinically relevant pathogenicity annotations in the available dataset were also not prioritized during the initial screening stage.
  
- 
-Step 2 — Selection of Exonic Variants
+#### Step 2 — Selection of Exonic Variants
 The initial analysis focused primarily on variants annotated as exonic in the available VCF annotation.
+
 This approach was selected to prioritize variants with a direct potential effect on protein sequence.
  
- 
-Step 3 — Removal of Synonymous Variants
+#### Step 3 — Removal of Synonymous Variants
 Variants annotated as synonymous in the ExonicFunc.refGene column were initially removed.
+
 The remaining variants primarily included:
 * Missense variants
 * Stop-gain variants
 * Other non-synonymous coding variants
+
 This filtering strategy was used for initial prioritization and did not imply that all synonymous variants were biologically irrelevant.
  
  
-Step 4 — Prioritization of Clinically Relevant Variants
+#### Step 4 — Prioritization of Clinically Relevant Variants
 Following the initial filtering process, approximately 22 candidate variants remained.
+
 Among these variants, six variants were selected for initial detailed investigation because they were reported as:
 * Pathogenic, or
 * Likely pathogenic
+
 in at least one of the available ACMG or ClinVar annotation fields.
  
  
-Step 5 — Gene and Phenotype Review
+#### Step 5 — Gene and Phenotype Review
 The prioritized variants and genes were investigated using:
 * OMIM
 * ClinVar
 * PubMed
 * Scientific literature
+
 The following factors were considered:
 * Gene–disease association
 * Variant classification
@@ -139,94 +168,126 @@ The following factors were considered:
 * Family pedigree
  
  
-4.2 Secondary Candidate Analysis
+### 4.2 Secondary Candidate Analysis
 Following the initial prioritization, additional variants were reviewed in selected candidate genes.
+
 This included:
 * Additional exonic variants
 * Synonymous variants
 * Intronic variants
 * Potential splice-region variants
+
 Particular attention was given to autosomal recessive genes in which only one potentially relevant variant had initially been identified.
+
 Variants near canonical splice sites were considered particularly important.
+
 Canonical splice positions generally include:
 * −1
 * −2
 * +1
 * +2
+
 relative to an exon–intron boundary.
+
 Variants in these positions may disrupt normal RNA splicing and can therefore be pathogenic even when they are not located within a protein-coding exon.
  
  
-5. Candidate Gene Prioritization
+## 5. Candidate Gene Prioritization
 Three genes were selected for detailed discussion:
+
 1. PAH — Leading candidate
 2. SLC25A5 — Alternative candidate
 3. SLC4A4 — Alternative candidate
+
 These genes were prioritized based on the currently available genomic and clinical evidence.
+
 None of the candidates can currently be considered definitively causative.
  
  
-6. PAH — Leading Candidate
-6.1 Gene Function
+## 6. PAH — Leading Candidate
+### 6.1 Gene Function
 The PAH gene encodes phenylalanine hydroxylase, an enzyme responsible for the conversion of phenylalanine to tyrosine.
+
 Phenylalanine hydroxylase deficiency results in elevated phenylalanine concentrations.
+
 Pathogenic variants in PAH are associated with:
 * Phenylketonuria (PKU)
 * Mild hyperphenylalaninemia
+
 PAH-related disorders are inherited in an autosomal recessive manner.
  
  
-6.2 Clinical Relevance
+### 6.2 Clinical Relevance
 Untreated or inadequately treated phenylalanine hydroxylase deficiency can result in neurological complications.
+
 Depending on disease severity and metabolic control, elevated phenylalanine may contribute to:
 * Developmental delay
 * Intellectual disability
 * Neurocognitive impairment
 * Behavioral abnormalities
+
 Because severe intellectual disability and developmental delay were reported in multiple affected family members, PAH was considered particularly relevant at the phenotype level.
  
  
-6.3 Identified Variant
+### 6.3 Identified Variant
 The primary PAH variant identified in the proband was:
-NM_000277.3(PAH):c.688G>A (p.Val230Ile)
+
+#### NM_000277.3(PAH):c.688G>A (p.Val230Ile)
+
 The variant was:
 * Missense
 * Heterozygous (0/1)
 * Located in PAH
 * Associated with PAH-related disease in clinical databases
-ClinVar currently lists this variant for phenylketonuria as Likely Pathogenic, with expert panel review.
+
+ClinVar currently lists this variant for phenylketonuria as Likely Pathogenic, with expert panel review [1].
+
 The variant has been reported in individuals with:
 * Mild hyperphenylalaninemia
 * Mild phenylketonuria
-and has been observed in affected individuals in homozygous or compound heterozygous states. (NCBI)
+
+and has been observed in affected individuals in homozygous or compound heterozygous states [1].
  
  
-6.4 Functional Evidence
+### 6.4 Functional Evidence
 Previous experimental studies have investigated the effect of p.Val230Ile on PAH protein function.
-Clinical and experimental evidence suggests that this variant is associated with a relatively mild PAH deficiency phenotype rather than complete loss of enzyme activity.
-The variant has been repeatedly observed in individuals with mild hyperphenylalaninemia or mild PKU. (NCBI)
+
+Clinical and experimental evidence suggests that this variant is associated with a relatively mild PAH deficiency phenotype rather than complete loss of enzyme activity [1].
+
+The variant has been repeatedly observed in individuals with mild hyperphenylalaninemia or mild PKU [1].
  
  
-6.5 Potential Second Allele Investigation
+### 6.5 Potential Second Allele Investigation
 Because PAH-related disease is autosomal recessive, a single heterozygous disease-associated variant is not sufficient to establish PAH as the cause of disease.
+
 Additional PAH variants were therefore investigated.
+
 One variant of particular interest was:
-PAH:c.735G>A (p.Val245=)
+
+#### PAH:c.735G>A (p.Val245=)
+
 This variant is synonymous and therefore does not alter the encoded amino acid.
-Importantly, current ClinVar records classify c.735G>A itself as Benign for the relevant condition.
+
+Importantly, current ClinVar records classify c.735G>A itself as Benign for the relevant condition [2].
+
 However, c.735G>A has also been reported as part of the following haplotype:
-c.[722delG;c.735G>A]
-This haplotype has been reported as Likely Pathogenic.
+
+#### c.[722delG;c.735G>A]
+
+This haplotype has been reported as Likely Pathogenic [3].
+
 Therefore, the available evidence does not support interpreting c.735G>A alone as a confirmed pathogenic second allele.
+
 Instead, this finding highlights the importance of determining whether:
 * Additional PAH variants are present.
 * A disease-associated haplotype is present.
 * c.735G>A occurs together with another pathogenic variant.
 * The identified PAH variants are located in cis or trans.
-The phase of the identified variants remains unknown. (NCBI)
+
+The phase of the identified variants remains unknown [2,3].
  
  
-6.6 Why PAH Was Prioritized
+### 6.6 Why PAH Was Prioritized
 PAH was considered the leading candidate because:
 * PAH has a well-established disease association.
 * The identified c.688G>A variant has substantial clinical evidence.
@@ -234,7 +295,7 @@ PAH was considered the leading candidate because:
 * Additional PAH variants were identified and require further investigation.
  
  
-6.7 Limitations
+### 6.7 Limitations
 Despite its strong prioritization, several limitations remain:
 * The primary variant is heterozygous.
 * A confirmed second pathogenic allele has not been identified.
@@ -242,14 +303,16 @@ Despite its strong prioritization, several limitations remain:
 * Segregation analysis has not been performed.
 * Plasma phenylalanine data are unavailable.
 * Newborn screening information is unavailable.
-Therefore:
-PAH is currently considered the leading candidate gene but cannot be confirmed as the definitive molecular diagnosis without additional molecular and clinical evidence.
+
+Therefore, PAH is currently considered the leading candidate gene but cannot be confirmed as the definitive molecular diagnosis without additional molecular and clinical evidence.
  
  
-7. SLC25A5 — Alternative Candidate
-7.1 Identified Variant
+## 7. SLC25A5 — Alternative Candidate
+### 7.1 Identified Variant
 The following variant was identified:
-NM_001152:exon3:c.662C>G (p.Thr221Ser)
+
+#### NM_001152:exon3:c.662C>G (p.Thr221Ser)
+
 The variant was:
 * Located on chromosome X
 * Missense
@@ -257,31 +320,39 @@ The variant was:
 * Not identified in ClinVar during the initial review
  
  
-7.2 Gene Relevance
+### 7.2 Gene Relevance
 SLC25A5 encodes a mitochondrial solute carrier involved in mitochondrial ADP/ATP exchange.
-The gene was proposed as a candidate for non-syndromic intellectual disability following the identification of overlapping Xq24 microdeletions in multiple unrelated families.
-The smallest region of overlap contained both SLC25A5 and SLC25A43. However, additional evidence excluded SLC25A43 as the primary candidate, leading the authors to propose SLC25A5 as a candidate gene for non-syndromic intellectual disability.
-SLC25A5 was also reported to have high expression levels in the cerebral cortex and hippocampus. (PubMed)
+
+The gene was proposed as a candidate for non-syndromic intellectual disability following the identification of overlapping Xq24 microdeletions in multiple unrelated families [4].
+
+The smallest region of overlap contained both SLC25A5 and SLC25A43. However, additional evidence excluded SLC25A43 as the primary candidate, leading the authors to propose SLC25A5 as a candidate gene for non-syndromic intellectual disability [4].
+
+SLC25A5 was also reported to have high expression levels in the cerebral cortex and hippocampus [4].
  
  
-7.3 Pedigree Considerations
+### 7.3 Pedigree Considerations
 The presence of affected males and females makes the pedigree more complex than a typical X-linked recessive pattern.
+
 Potential mechanisms that could contribute to variable expression in females include:
 * Skewed X-chromosome inactivation
 * Variable expressivity
 * Differences in genetic background
+
 However, these mechanisms remain hypothetical in the present case.
+
 The available family data are insufficient to establish that the identified SLC25A5 variant follows an X-linked inheritance pattern.
  
  
-7.4 Required Investigation
+### 7.4 Required Investigation
 The p.Thr221Ser variant requires additional evaluation using:
 * gnomAD population frequency
 * Conservation analysis
 * In silico pathogenicity prediction
 * Literature review for the specific variant
 * Segregation analysis
+
 Testing of additional family members would be particularly valuable.
+
 Important questions include:
 * Is the variant present in affected males?
 * Is the variant present in affected females?
@@ -290,37 +361,44 @@ Important questions include:
 * Does the variant segregate with the phenotype?
  
  
-7.5 Interpretation
+### 7.5 Interpretation
 SLC25A5 remains an interesting alternative candidate because:
 * The gene has been proposed as a candidate for non-syndromic intellectual disability.
 * It has biological relevance to mitochondrial energy metabolism.
 * The identified variant is located on the X chromosome.
 * The reported phenotype is compatible at the gene level.
+
 However:
 * Variant-level evidence remains limited.
 * The specific p.Thr221Ser variant requires further characterization.
 * Segregation data are unavailable.
-Therefore:
-SLC25A5 should currently be interpreted as an alternative candidate requiring further investigation.
+
+Therefore, SLC25A5 should currently be interpreted as an alternative candidate requiring further investigation.
  
  
-8. SLC4A4 — Alternative Candidate
-8.1 Identified Variant
+## 8. SLC4A4 — Alternative Candidate
+### 8.1 Identified Variant
+
 The following variant was identified:
-SLC4A4:c.1942G>A
+#### SLC4A4:c.1942G>A
+
 The variant was:
 * Missense
 * Heterozygous (0/1)
 * Reported with conflicting clinical interpretations
+
 Available classifications included:
 * Variant of uncertain significance
 * Benign
 * Likely benign
+
 Therefore, the identified coding variant alone does not provide sufficient evidence to establish disease causation.
  
  
-8.2 Gene–Disease Association
+### 8.2 Gene–Disease Association
+
 SLC4A4 is associated with autosomal recessive proximal renal tubular acidosis with ocular abnormalities.
+
 Reported manifestations may include:
 * Proximal renal tubular acidosis
 * Developmental delay
@@ -328,20 +406,27 @@ Reported manifestations may include:
 * Glaucoma
 * Cataract
 * Other ocular abnormalities
+
 The potential presence of intellectual disability and developmental delay makes this gene relevant to the available phenotype.
  
  
-8.3 Importance of Splice-Region Variants
+### 8.3 Importance of Splice-Region Variants
+
 A published case report described compound heterozygous SLC4A4 variants located in exon–intron boundary regions:
 * c.1076+3A>C
 * c.1772−2A>T
-The affected individual presented with severe proximal renal tubular acidosis, glaucoma, and intellectual disability.
-The study demonstrated that variants outside the protein-coding portion of an exon can disrupt normal RNA splicing and substantially reduce SLC4A4 transcript expression. (PubMed)
-This finding is particularly relevant because multiple intronic variants were identified in SLC4A4 in the available VCF file.
+
+The affected individual presented with severe proximal renal tubular acidosis, glaucoma, and intellectual disability. The study demonstrated that variants outside the protein-coding portion of an exon can disrupt normal RNA splicing and substantially reduce SLC4A4 transcript expression [5].
+
+Another study demonstrated aberrant splicing associated with the canonical splice-site variant c.1499+1G>A in SLC4A4 [6].
+
+These findings are particularly relevant because multiple intronic variants were identified in SLC4A4 in the available VCF file.
  
  
-8.4 Intronic Variant Investigation
+### 8.4 Intronic Variant Investigation
+
 The identified intronic variants require transcript-level annotation before clinical interpretation.
+
 Each variant should be evaluated according to:
 1. Genomic position
 2. Reference genome assembly
@@ -352,112 +437,144 @@ Each variant should be evaluated according to:
 7. Population frequency
 8. Splice prediction
 9. Literature evidence
+
 Variants closest to exon–intron boundaries should be prioritized.
+
 Canonical splice-site variants include positions:
 * +1
 * +2
 * −1
 * −2
+
 Additional nearby variants, such as +3 or −3, may also affect splicing depending on the gene and local sequence context.
  
  
-8.5 Interpretation
+### 8.5 Interpretation
+
 SLC4A4 remains an alternative candidate because:
 * The associated disease can include intellectual disability and developmental delay.
 * SLC4A4-related disease follows an autosomal recessive pattern.
 * Pathogenic splice-region variants have been reported.
 * Multiple intronic variants remain to be systematically evaluated.
+
 However:
 * The currently identified coding variant has conflicting interpretations.
 * A second pathogenic allele has not been confirmed.
 * Renal and ophthalmological clinical data are unavailable.
-Therefore:
-SLC4A4 remains a candidate requiring further investigation, particularly through systematic analysis of intronic and splice-region variants.
+
+Therefore, SLC4A4 remains a candidate requiring further investigation, particularly through systematic analysis of intronic and splice-region variants.
  
  
-9. Summary of Other Evaluated Genes
-Gene	Main Disease Association	Preliminary Interpretation
-TYR	Oculocutaneous albinism type 1	Two heterozygous missense variants identified, but reported phenotype lacks clear evidence of albinism; phase unknown
-DYSF	Muscular dystrophy	Two variants identified, but phenotype compatibility remains limited
-GHR	Laron syndrome	Autosomal recessive disorder; phenotype and inheritance were not strongly compatible
-FAM83H	Primarily amelogenesis imperfecta	Main disease association did not explain the reported neurological phenotype
-MYH7	Cardiomyopathy and myopathy	No reported cardiac or muscular phenotype
-NQO1	Drug response / other associations	No convincing relationship with the investigated phenotype
-F5	Thrombophilia-related disorders	Poor phenotype compatibility
-ABCC2	Dubin–Johnson syndrome	No compatible clinical phenotype
-HSPG2	Skeletal dysplasia / Schwartz–Jampel syndrome	No convincing phenotype match
-TNNT2	Cardiomyopathy	No reported cardiac phenotype
-LRPPRC	Mitochondrial complex IV deficiency	Only one potentially relevant variant identified; no confirmed second allele
-TIA1	ALS / distal myopathy	Insufficient phenotype compatibility
-IFT140	Ciliopathies and skeletal disorders	No convincing phenotype match
-MPI	Congenital disorder of glycosylation type Ib	No confirmed second pathogenic allele
-CCDC88C	Hydrocephalus / spinocerebellar ataxia	Variant and phenotype evidence insufficient
-TGM1	Congenital ichthyosis	No compatible skin phenotype reported
-LRRK2	Parkinson disease	Variant reported as benign/likely benign
-LAMA2	Muscular dystrophy	No convincing disease-causing genotype identified
-GCKR	Fasting plasma glucose trait	Variant reported as benign
+## 9. Summary of Other Evaluated Genes
+
+| Gene | Main Disease Association | Preliminary Interpretation |
+|---|---|---|
+| TYR | Oculocutaneous albinism type 1 | Two heterozygous missense variants identified, but reported phenotype lacks clear evidence of albinism; phase unknown |
+| DYSF | Muscular dystrophy | Two variants identified, but phenotype compatibility remains limited |
+| GHR | Laron syndrome | Autosomal recessive disorder; phenotype and inheritance were not strongly compatible |
+| FAM83H | Primarily amelogenesis imperfecta | Main disease association did not explain the reported neurological phenotype |
+| MYH7 | Cardiomyopathy and myopathy | No reported cardiac or muscular phenotype |
+| NQO1 | Drug response / other associations | No convincing relationship with the investigated phenotype |
+| F5 | Thrombophilia-related disorders | Poor phenotype compatibility |
+| ABCC2 | Dubin–Johnson syndrome | No compatible clinical phenotype |
+| HSPG2 | Skeletal dysplasia / Schwartz–Jampel syndrome | No convincing phenotype match |
+| TNNT2 | Cardiomyopathy | No reported cardiac phenotype |
+| LRPPRC | Mitochondrial complex IV deficiency | Only one potentially relevant variant identified; no confirmed second allele |
+| TIA1 | ALS / distal myopathy | Insufficient phenotype compatibility |
+| IFT140 | Ciliopathies and skeletal disorders | No convincing phenotype match |
+| MPI | Congenital disorder of glycosylation type Ib | No confirmed second pathogenic allele |
+| CCDC88C | Hydrocephalus / spinocerebellar ataxia | Variant and phenotype evidence insufficient |
+| TGM1 | Congenital ichthyosis | No compatible skin phenotype reported |
+| LRRK2 | Parkinson disease | Variant reported as benign/likely benign |
+| LAMA2 | Muscular dystrophy | No convincing disease-causing genotype identified |
+| GCKR | Fasting plasma glucose trait | Variant reported as benign |
+
 The genes listed above were evaluated based on the currently available information and should not be considered permanently excluded.
+
 Additional clinical or genetic evidence may alter their prioritization.
  
  
-10. Final Candidate Prioritization
-🥇 PAH — Leading Candidate
-Strengths
+## 10. Final Candidate Prioritization
+
+### PAH — Leading Candidate
+
+#### Strengths
+
 * Established disease gene
 * Strong biological relevance
 * Clinically significant missense variant identified
 * Reported phenotype potentially compatible with untreated metabolic disease
-Limitations
+
+#### Limitations
+
 * Only one disease-associated allele confirmed
 * Second pathogenic allele not identified
 * No metabolic data
 * No segregation analysis
  
  
-🥈 SLC25A5 — Alternative Candidate
-Strengths
+### SLC25A5 — Alternative Candidate
+
+#### Strengths
+
 * Proposed association with non-syndromic intellectual disability
 * Strong mitochondrial biological relevance
 * Located on chromosome X
-Limitations
+
+#### Limitations
+
 * Limited variant-level evidence
 * No ClinVar evidence for the specific variant identified
 * No segregation data
  
  
-🥉 SLC4A4 — Alternative Candidate
-Strengths
+### SLC4A4 — Alternative Candidate
+
+#### Strengths
+
 * Disease association can include intellectual disability
 * Literature supports pathogenic splice-region variants
 * Multiple intronic variants remain to be investigated
-Limitations
+
+#### Limitations
+
 * Coding variant has conflicting interpretations
 * No confirmed second pathogenic allele
 * No renal or ophthalmological phenotype available
  
  
-11. Limitations
-Limited Clinical Information
+## 11. Limitations
+
+### Limited Clinical Information
+
 Detailed clinical phenotyping was unavailable.
+
 This limited the ability to perform phenotype-driven variant prioritization.
  
 
-Lack of Segregation Analysis
+### Lack of Segregation Analysis
+
 The absence of molecular data from additional family members prevented:
+
 * Segregation analysis
 * Confirmation of parental origin
 * Phasing
 * Confirmation of compound heterozygosity
  
  
-Single-Proband Analysis
+### Single-Proband Analysis
+
 Only one affected individual’s VCF file was available.
+
 Given the multigenerational family structure, sequencing additional affected individuals would substantially improve candidate prioritization.
  
  
-Initial Exonic Filtering
+### Initial Exonic Filtering
+
 The initial workflow focused primarily on exonic non-synonymous variants.
+
 Although useful for initial prioritization, this strategy may miss:
+
 * Splice variants
 * Deep intronic variants
 * Synonymous variants affecting splicing
@@ -465,8 +582,10 @@ Although useful for initial prioritization, this strategy may miss:
 * Structural variants not represented in the available VCF
  
  
-12. Recommended Next Steps
-PAH
+## 12. Recommended Next Steps
+
+### PAH
+
 * Measure plasma phenylalanine.
 * Measure plasma tyrosine.
 * Review newborn screening records.
@@ -477,7 +596,8 @@ PAH
 * Evaluate whether a disease-associated haplotype is present.
  
  
-SLC25A5
+### SLC25A5
+
 * Check population frequency in gnomAD.
 * Evaluate amino acid conservation.
 * Perform in silico pathogenicity prediction.
@@ -487,7 +607,8 @@ SLC25A5
 * Consider X-inactivation studies if biologically justified.
 
 
-SLC4A4
+### SLC4A4
+
 * Convert genomic coordinates to transcript-level HGVS nomenclature.
 * Determine the distance of intronic variants from exon boundaries.
 * Prioritize canonical and near-canonical splice variants.
@@ -499,28 +620,46 @@ SLC4A4
 * Perform segregation analysis.
  
  
-13. Conclusion
+## 13. Conclusion
+
 This project demonstrates a case-based approach to variant prioritization using a targeted sequencing panel VCF file from an affected individual in a multigenerational family with a neurodevelopmental phenotype.
+
 A stepwise filtering workflow reduced the number of candidate variants and enabled detailed investigation of multiple disease-associated genes.
+
 Based on the currently available evidence:
-PAH was prioritized as the leading candidate gene.
-The identification of PAH:c.688G>A (p.Val230Ile), together with the biological compatibility between phenylalanine hydroxylase deficiency and neurodevelopmental impairment, supports further clinical and molecular investigation of this gene.
-SLC25A5 and SLC4A4 were retained as alternative candidate genes.
+
+### PAH was prioritized as the leading candidate gene.
+
+The identification of PAH:c.688G>A (p.Val230Ile), together with the biological compatibility between phenylalanine hydroxylase deficiency and neurodevelopmental impairment, supports further clinical and molecular investigation of this gene [1].
+
+### SLC25A5 and SLC4A4 were retained as alternative candidate genes.
+
 Both genes require additional variant-level evaluation and segregation analysis.
+
 The absence of detailed clinical data, segregation analysis, and confirmed second alleles represents the major limitation of the current investigation.
+
 Therefore, this analysis should be interpreted as a candidate gene prioritization study rather than a definitive molecular diagnosis.
  
 
-References
-1. ClinVar. NM_000277.3(PAH):c.688G>A (p.Val230Ile) and Phenylketonuria. National Center for Biotechnology Information. Available through ClinVar. (NCBI)
-2. Vandewalle J, Bauters M, Van Esch H, et al. The mitochondrial solute carrier SLC25A5 at Xq24 is a novel candidate gene for non-syndromic intellectual disability. Human Genetics. 2013;132(10):1177–1185. doi:10.1007/s00439-013-1322-3. (PubMed)
-3. Horita S, Simsek E, Simsek T, et al. SLC4A4 compound heterozygous mutations in exon-intron boundary regions presenting with severe proximal renal tubular acidosis and extrarenal symptoms coexisting with Turner’s syndrome: a case report. BMC Medical Genetics. 2018;19:103. doi:10.1186/s12881-018-0612-y. (PubMed)
-4. ClinVar. NM_000277.3(PAH):c.735G>A (p.Val245=). National Center for Biotechnology Information. (NCBI)
-5. ClinVar. NM_000277.1:c.[722delG;c.735G>A]. National Center for Biotechnology Information. (NCBI)
+## References
+
+1. [ClinVar: PAH c.688G>A (p.Val230Ile)](https://www.ncbi.nlm.nih.gov/clinvar/)
+
+2. [ClinVar: PAH c.735G>A (p.Val245=)](https://www.ncbi.nlm.nih.gov/clinvar/)
+
+3. [ClinVar: PAH c.[722delG;c.735G>A]](https://www.ncbi.nlm.nih.gov/clinvar/)
+
+4. Vandewalle J, Bauters M, Van Esch H, et al. [The mitochondrial solute carrier SLC25A5 at Xq24 is a novel candidate gene for non-syndromic intellectual disability](https://pubmed.ncbi.nlm.nih.gov/23783460/). *Human Genetics*. 2013;132(10):1177–1185. doi:10.1007/s00439-013-1322-3.
+
+5. Horita S, Simsek E, Simsek T, et al. [SLC4A4 compound heterozygous mutations in exon-intron boundary regions presenting with severe proximal renal tubular acidosis and extrarenal symptoms coexisting with Turner syndrome: a case report](https://pubmed.ncbi.nlm.nih.gov/29890996/). *BMC Medical Genetics*. 2018;19:103. doi:10.1186/s12881-018-0612-y.
+
+6. [Altered pre-mRNA splicing caused by intronic variant c.1499+1G>A in SLC4A4 gene](https://pubmed.ncbi.nlm.nih.gov/36061388/). PubMed PMID: 36061388.
  
  
-Databases and Resources
+## Databases and Resources
+
 The following resources were used during candidate gene prioritization:
+
 * ClinVar
 * OMIM
 * PubMed
@@ -528,9 +667,11 @@ The following resources were used during candidate gene prioritization:
 * Google Scholar
 * Scientific literature
  
-⸻
  
-Disclaimer
+## Disclaimer
+
 This repository is intended for educational and research purposes.
+
 All clinical and family information has been anonymized.
+
 The findings presented here represent exploratory variant prioritization and candidate gene analysis. They should not be considered a definitive clinical diagnosis or used as a substitute for clinical genetic evaluation.
